@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbyqtbFkdJH-XyI-w7x2_tk2OIHeGuvz08XZ2orxvJtjXD2NWih9lImD8Vz0D0kx2Ou0/exec";
+  "https://script.google.com/macros/s/AKfycbwkh4M7V-zv2oybLrS2oiBhoC2_TuXJYa-Nd7ubntVcFPRr8MRAcX6cikbaFlyp8CUE/exec";
 
 export default function NewsletterForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -13,18 +13,17 @@ export default function NewsletterForm() {
     const email = (e.currentTarget.elements.namedItem("email") as HTMLInputElement).value;
 
     try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
+      const params = new URLSearchParams({
+        name: "Newsletter Signup",
+        email,
+        interest: "SMF AI Weekly Newsletter",
+        message: "Newsletter signup from homepage.",
+        request_call: "No",
+        business: "",
+      });
+      await fetch(SCRIPT_URL + "?" + params.toString(), {
+        method: "GET",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: "Newsletter Signup",
-          email,
-          interest: "SMF AI Weekly Newsletter",
-          message: "Newsletter signup from homepage.",
-          request_call: "No",
-          business: "",
-        }),
       });
       setStatus("success");
     } catch {

@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 
 const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbyqtbFkdJH-XyI-w7x2_tk2OIHeGuvz08XZ2orxvJtjXD2NWih9lImD8Vz0D0kx2Ou0/exec";
+  "https://script.google.com/macros/s/AKfycbwkh4M7V-zv2oybLrS2oiBhoC2_TuXJYa-Nd7ubntVcFPRr8MRAcX6cikbaFlyp8CUE/exec";
 
 export default function ContactPage() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
@@ -23,11 +23,10 @@ export default function ContactPage() {
     };
 
     try {
-      await fetch(SCRIPT_URL, {
-        method: "POST",
+      const params = new URLSearchParams(data);
+      await fetch(SCRIPT_URL + "?" + params.toString(), {
+        method: "GET",
         mode: "no-cors",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
       });
       setStatus("success");
       form.reset();
