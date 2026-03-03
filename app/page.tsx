@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
@@ -138,26 +139,7 @@ export default function Home() {
             no jargon, just what you can actually use. Written by an enterprise AI engineer
             who forges metal on weekends.
           </p>
-          <form
-            action="https://formspree.io/f/REPLACE_WITH_YOUR_ID"
-            method="POST"
-            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              name="email"
-              placeholder="Your email address"
-              required
-              className="flex-1 px-4 py-3 rounded border border-gray-300 bg-white text-charcoal focus:outline-none focus:ring-2 focus:ring-[#C87941]"
-            />
-            <input type="hidden" name="_subject" value="SMF AI Weekly Signup" />
-            <button
-              type="submit"
-              className="bg-[#C87941] text-white px-6 py-3 rounded font-semibold hover:bg-[#b56b35] transition-colors whitespace-nowrap"
-            >
-              Subscribe Free
-            </button>
-          </form>
+          <NewsletterForm />
           <p className="text-xs text-gray-400 mt-3">No spam. Unsubscribe anytime.</p>
         </div>
       </section>
