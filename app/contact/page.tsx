@@ -30,7 +30,7 @@ export default function ContactPage() {
               I respond personally within 24 hours.
             </p>
             <a
-              href="mailto:mikesmoltbot@gmail.com?subject=SMF Works Inquiry"
+              href="mailto:mikesmoltbot@gmail.com?subject=Contact Request"
               className="inline-block bg-[#C87941] text-white px-10 py-4 rounded font-semibold text-lg hover:bg-[#b56b35] transition-colors"
             >
               📧 Email Us Now
