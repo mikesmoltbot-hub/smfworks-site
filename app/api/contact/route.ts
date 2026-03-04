@@ -17,7 +17,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Valid email required" }, { status: 400 });
     }
 
-    const apiKey = process.env.RESEND_API_KEY;
+    const apiKey = process.env["RESEND_API_KEY"];
     if (!apiKey) {
       console.error("RESEND_API_KEY not set");
       return NextResponse.json({ error: "Server configuration error" }, { status: 500 });
