@@ -1,6 +1,43 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
 
 export default function ContactPage() {
+  const [form, setForm] = useState({ name: "", email: "", business: "", message: "" });
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMsg("");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      const data = await res.json();
+
+      if (res.ok) {
+        setStatus("success");
+        setForm({ name: "", email: "", business: "", message: "" });
+      } else {
+        setStatus("error");
+        setErrorMsg(data.error || "Something went wrong. Please try again.");
+      }
+    } catch {
+      setStatus("error");
+      setErrorMsg("Something went wrong. Please try again.");
+    }
+  }
+
   return (
     <>
       {/* HEADER */}
@@ -21,26 +58,108 @@ export default function ContactPage() {
       <section className="py-20 px-6 bg-[#F8F5F0]">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
 
-          {/* CTA */}
+          {/* FORM */}
           <div>
             <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
-            <p className="text-gray-600 leading-relaxed mb-8">
-              Click below to send an email directly. Tell me about your business,
-              what challenges you&apos;re facing, and what you&apos;re hoping AI can help with.
-              I respond personally within 24 hours.
-            </p>
-            <a
-              href="mailto:michael@smfworks.com?subject=Contact Request"
-              className="inline-block bg-[#C87941] text-white px-10 py-4 rounded font-semibold text-lg hover:bg-[#b56b35] transition-colors"
-            >
-              📧 Email Us Now
-            </a>
-            <p className="text-xs text-gray-400 mt-4">
-              Opens your email client — or write directly to{" "}
-              <a href="mailto:michael@smfworks.com" className="text-[#C87941] hover:underline">
-                michael@smfworks.com
-              </a>
-            </p>
+
+            {status === "success" ? (
+              <div className="bg-[#1E1E1E] text-[#F8F5F0] rounded-xl p-10 text-center">
+                <div className="text-5xl mb-4">🔨</div>
+                <h3 className="text-xl font-bold mb-2 text-[#C87941]">Message received!</h3>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  Thanks for reaching out. Michael responds personally within 24 hours.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-semibold mb-1.5" htmlFor="name">
+                      Name <span className="text-[#C87941]">*</span>
+                    </label>
+                    <input
+                      id="name"
+                      name="name"
+                      type="text"
+                      required
+                      value={form.name}
+                      onChange={handleChange}
+                      disabled={status === "loading"}
+                      placeholder="Jane Smith"
+                      className="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-[#C87941] transition-colors disabled:opacity-50 text-sm"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold mb-1.5" htmlFor="email">
+                      Email <span className="text-[#C87941]">*</span>
+                    </label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      required
+                      value={form.email}
+                      onChange={handleChange}
+                      disabled={status === "loading"}
+                      placeholder="jane@example.com"
+                      className="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-[#C87941] transition-colors disabled:opacity-50 text-sm"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold mb-1.5" htmlFor="business">
+                    Business Name <span className="text-gray-400 font-normal">(optional)</span>
+                  </label>
+                  <input
+                    id="business"
+                    name="business"
+                    type="text"
+                    value={form.business}
+                    onChange={handleChange}
+                    disabled={status === "loading"}
+                    placeholder="Smith Plumbing & Heating"
+                    className="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-[#C87941] transition-colors disabled:opacity-50 text-sm"
+                  />
+                </div>
+
+                <div>
+                  <label className="block text-sm font-semibold mb-1.5" htmlFor="message">
+                    Message <span className="text-[#C87941]">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={5}
+                    value={form.message}
+                    onChange={handleChange}
+                    disabled={status === "loading"}
+                    placeholder="Tell me about your business, what challenges you're facing, and what you're hoping AI can help with."
+                    className="w-full px-4 py-3 rounded border border-gray-300 bg-white focus:outline-none focus:border-[#C87941] transition-colors disabled:opacity-50 text-sm resize-none"
+                  />
+                </div>
+
+                {status === "error" && (
+                  <p className="text-red-600 text-sm">{errorMsg}</p>
+                )}
+
+                <button
+                  type="submit"
+                  disabled={status === "loading"}
+                  className="w-full bg-[#C87941] text-white py-4 rounded font-semibold text-base hover:bg-[#b56b35] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                >
+                  {status === "loading" ? "Sending…" : "Send Message →"}
+                </button>
+
+                <p className="text-xs text-gray-400 text-center">
+                  Or email directly:{" "}
+                  <a href="mailto:michael@smfworks.com" className="text-[#C87941] hover:underline">
+                    michael@smfworks.com
+                  </a>
+                </p>
+              </form>
+            )}
           </div>
 
           {/* INFO */}
