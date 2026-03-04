@@ -30,15 +30,15 @@ export default function ContactPage() {
               I respond personally within 24 hours.
             </p>
             <a
-              href="mailto:mikesmoltbot@gmail.com?subject=Contact Request"
+              href="mailto:michael@smfworks.com?subject=Contact Request"
               className="inline-block bg-[#C87941] text-white px-10 py-4 rounded font-semibold text-lg hover:bg-[#b56b35] transition-colors"
             >
               📧 Email Us Now
             </a>
             <p className="text-xs text-gray-400 mt-4">
               Opens your email client — or write directly to{" "}
-              <a href="mailto:mikesmoltbot@gmail.com" className="text-[#C87941] hover:underline">
-                mikesmoltbot@gmail.com
+              <a href="mailto:michael@smfworks.com" className="text-[#C87941] hover:underline">
+                michael@smfworks.com
               </a>
             </p>
           </div>
@@ -52,8 +52,8 @@ export default function ContactPage() {
                   <span className="text-2xl">📧</span>
                   <div>
                     <div className="font-semibold">Email</div>
-                    <a href="mailto:mikesmoltbot@gmail.com" className="text-[#C87941] hover:underline">
-                      mikesmoltbot@gmail.com
+                    <a href="mailto:michael@smfworks.com" className="text-[#C87941] hover:underline">
+                      michael@smfworks.com
                     </a>
                   </div>
                 </div>
