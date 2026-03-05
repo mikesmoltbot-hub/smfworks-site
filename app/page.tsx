@@ -7,11 +7,6 @@ export default function Home() {
     <>
       {/* HERO */}
       <section className="bg-[#001F3F] text-[#E2E8F0] py-20 md:py-28 px-6 relative overflow-hidden min-h-[90vh] flex items-center">
-        {/* Circuit board background pattern */}
-        <div className="absolute inset-0 opacity-[0.04]" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v15M30 45v15M0 30h15M45 30h15M30 30h0' stroke='%2300D4FF' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='2' fill='%2300D4FF'/%3E%3Ccircle cx='30' cy='0' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='30' cy='60' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='0' cy='30' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='60' cy='30' r='1.5' fill='%2300D4FF'/%3E%3C/svg%3E")`,
-          backgroundSize: '60px 60px'
-        }} />
         {/* Cyan glow top */}
         <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[#00D4FF] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
         {/* Orange glow bottom right */}
@@ -24,7 +19,7 @@ export default function Home() {
               {/* Glow behind logo */}
               <div className="absolute inset-0 bg-[#00D4FF] opacity-[0.15] blur-[40px] rounded-full scale-110" />
               <Image
-                src="/smf-logo.jpg"
+                src="/smf-logo.png"
                 alt="SMF Works"
                 width={320}
                 height={238}
@@ -91,12 +86,6 @@ export default function Home() {
 
       {/* WHAT WE DO — Glassmorphism Cards */}
       <section className="py-20 px-6 bg-[#0A0F1F] relative overflow-hidden">
-        {/* Subtle background circuit pattern */}
-        <div className="absolute inset-0 opacity-[0.02]" style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v15M30 45v15M0 30h15M45 30h15M30 30h0' stroke='%2300D4FF' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='2' fill='%2300D4FF'/%3E%3C/svg%3E")`,
-          backgroundSize: '60px 60px'
-        }} />
-
         <div className="max-w-5xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#E2E8F0]">
             What We Do
