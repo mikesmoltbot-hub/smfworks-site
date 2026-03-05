@@ -1,38 +1,69 @@
 import Link from "next/link";
+import Image from "next/image";
 import NewsletterForm from "@/components/NewsletterForm";
 
 export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-[#001F3F] text-[#E2E8F0] py-28 px-6 relative overflow-hidden">
-        {/* Subtle gradient glow */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-[#00D4FF] opacity-[0.07] blur-[120px] rounded-full pointer-events-none" />
-        <div className="max-w-4xl mx-auto relative z-10">
-          <p className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest mb-4">
+      <section className="bg-[#001F3F] text-[#E2E8F0] py-20 md:py-28 px-6 relative overflow-hidden min-h-[90vh] flex items-center">
+        {/* Circuit board background pattern */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v15M30 45v15M0 30h15M45 30h15M30 30h0' stroke='%2300D4FF' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='2' fill='%2300D4FF'/%3E%3Ccircle cx='30' cy='0' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='30' cy='60' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='0' cy='30' r='1.5' fill='%2300D4FF'/%3E%3Ccircle cx='60' cy='30' r='1.5' fill='%2300D4FF'/%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }} />
+        {/* Cyan glow top */}
+        <div className="absolute top-[-100px] left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-[#00D4FF] opacity-[0.08] blur-[150px] rounded-full pointer-events-none" />
+        {/* Orange glow bottom right */}
+        <div className="absolute bottom-[-50px] right-[-100px] w-[400px] h-[300px] bg-[#FF6B00] opacity-[0.05] blur-[120px] rounded-full pointer-events-none" />
+
+        <div className="max-w-4xl mx-auto relative z-10 text-center">
+          {/* PROMINENT LOGO */}
+          <div className="mb-8 flex justify-center">
+            <div className="relative">
+              {/* Glow behind logo */}
+              <div className="absolute inset-0 bg-[#00D4FF] opacity-[0.15] blur-[40px] rounded-full scale-110" />
+              <Image
+                src="/smf-logo.jpg"
+                alt="SMF Works"
+                width={320}
+                height={238}
+                className="relative z-10 w-[280px] md:w-[320px] h-auto drop-shadow-[0_0_30px_rgba(0,212,255,0.3)]"
+                priority
+              />
+            </div>
+          </div>
+
+          <p className="text-[#00D4FF] text-sm font-semibold uppercase tracking-[0.2em] mb-5">
             AI Solutions for Small Business
           </p>
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
+
+          {/* Glowing headline */}
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6" style={{
+            textShadow: '0 0 40px rgba(0, 212, 255, 0.15), 0 0 80px rgba(0, 212, 255, 0.05)'
+          }}>
             Forged by 30 years of experience.<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00D4FF] to-[#FF6B00]">
               Forging your future.
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-[#94A3B8] max-w-2xl mb-10 leading-relaxed">
+
+          <p className="text-lg md:text-xl text-[#94A3B8] max-w-2xl mx-auto mb-10 leading-relaxed">
             SMF Works delivers AI-powered content and workflow solutions to small businesses
             that have been priced out of the game. Serious expertise. Genuine craftsmanship.
             No corporate fluff.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
+
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="bg-[#FF6B00] text-white px-8 py-3 rounded-lg font-semibold text-center hover:bg-[#e55f00] transition-colors shadow-lg shadow-[#FF6B00]/20"
+              className="bg-[#FF6B00] text-white px-8 py-3.5 rounded-lg font-semibold text-center hover:bg-[#e55f00] transition-all shadow-lg shadow-[#FF6B00]/25 hover:shadow-[#FF6B00]/40"
             >
-              Request a Call
+              Get Started
             </Link>
             <Link
               href="/services"
-              className="border border-[#00D4FF] text-[#00D4FF] px-8 py-3 rounded-lg font-semibold text-center hover:bg-[#00D4FF] hover:text-[#001F3F] transition-colors"
+              className="border border-[#00D4FF]/60 text-[#00D4FF] px-8 py-3.5 rounded-lg font-semibold text-center hover:bg-[#00D4FF] hover:text-[#001F3F] transition-all hover:shadow-lg hover:shadow-[#00D4FF]/20"
             >
               See Our Services
             </Link>
@@ -58,9 +89,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* WHAT WE DO */}
-      <section className="py-20 px-6 bg-[#0A0F1F]">
-        <div className="max-w-5xl mx-auto">
+      {/* WHAT WE DO — Glassmorphism Cards */}
+      <section className="py-20 px-6 bg-[#0A0F1F] relative overflow-hidden">
+        {/* Subtle background circuit pattern */}
+        <div className="absolute inset-0 opacity-[0.02]" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0v15M30 45v15M0 30h15M45 30h15M30 30h0' stroke='%2300D4FF' stroke-width='0.5' fill='none'/%3E%3Ccircle cx='30' cy='30' r='2' fill='%2300D4FF'/%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }} />
+
+        <div className="max-w-5xl mx-auto relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#E2E8F0]">
             What We Do
           </h2>
@@ -69,43 +106,46 @@ export default function Home() {
             that enterprise companies have been hoarding.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {/* Service 1 */}
-            <div className="bg-[#131B2E] rounded-xl p-8 border border-[#1e2a45] hover:border-[#00D4FF]/40 transition-colors group">
-              <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-4 group-hover:bg-[#00D4FF]/20 transition-colors">
-                <span className="text-2xl">✍️</span>
+          {/* Glassmorphism container */}
+          <div className="bg-[#131B2E]/60 backdrop-blur-md rounded-2xl border border-[#1e2a45]/80 p-8 md:p-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Service 1 */}
+              <div className="bg-[#0A0F1F]/80 backdrop-blur-sm rounded-xl p-8 border border-[#1e2a45] hover:border-[#00D4FF]/40 transition-all group hover:shadow-lg hover:shadow-[#00D4FF]/5">
+                <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-4 group-hover:bg-[#00D4FF]/20 transition-colors group-hover:shadow-lg group-hover:shadow-[#00D4FF]/20">
+                  <span className="text-2xl">✍️</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">AI Content Production</h3>
+                <p className="text-[#94A3B8] leading-relaxed mb-6">
+                  Blog posts, email sequences, social media, white papers, thought leadership,
+                  and ghostwriting — all AI-powered, all precisely crafted to your brand voice.
+                </p>
+                <Link href="/services#content" className="text-[#00D4FF] font-semibold hover:underline inline-flex items-center gap-1">
+                  Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
+                </Link>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">AI Content Production</h3>
-              <p className="text-[#94A3B8] leading-relaxed mb-6">
-                Blog posts, email sequences, social media, white papers, thought leadership,
-                and ghostwriting — all AI-powered, all precisely crafted to your brand voice.
-              </p>
-              <Link href="/services#content" className="text-[#00D4FF] font-semibold hover:underline">
-                Learn more →
-              </Link>
-            </div>
 
-            {/* Service 2 */}
-            <div className="bg-[#131B2E] rounded-xl p-8 border border-[#1e2a45] hover:border-[#FF6B00]/40 transition-colors group">
-              <div className="w-12 h-12 rounded-lg bg-[#FF6B00]/10 flex items-center justify-center mb-4 group-hover:bg-[#FF6B00]/20 transition-colors">
-                <span className="text-2xl">⚙️</span>
+              {/* Service 2 */}
+              <div className="bg-[#0A0F1F]/80 backdrop-blur-sm rounded-xl p-8 border border-[#1e2a45] hover:border-[#FF6B00]/40 transition-all group hover:shadow-lg hover:shadow-[#FF6B00]/5">
+                <div className="w-12 h-12 rounded-lg bg-[#FF6B00]/10 flex items-center justify-center mb-4 group-hover:bg-[#FF6B00]/20 transition-colors group-hover:shadow-lg group-hover:shadow-[#FF6B00]/20">
+                  <span className="text-2xl">⚙️</span>
+                </div>
+                <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">AI Workflow Consulting</h3>
+                <p className="text-[#94A3B8] leading-relaxed mb-6">
+                  Implementing AI automation for your business operations — whether you&apos;re a
+                  trades business or a white-collar firm, we build practical systems that save
+                  you time and money.
+                </p>
+                <Link href="/services#workflow" className="text-[#FF6B00] font-semibold hover:underline inline-flex items-center gap-1">
+                  Learn more <span className="transition-transform group-hover:translate-x-1">→</span>
+                </Link>
               </div>
-              <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">AI Workflow Consulting</h3>
-              <p className="text-[#94A3B8] leading-relaxed mb-6">
-                Implementing AI automation for your business operations — whether you&apos;re a
-                trades business or a white-collar firm, we build practical systems that save
-                you time and money.
-              </p>
-              <Link href="/services#workflow" className="text-[#FF6B00] font-semibold hover:underline">
-                Learn more →
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* FOUNDER CALLOUT */}
-      <section className="bg-[#131B2E] text-[#E2E8F0] py-20 px-6">
+      <section className="bg-[#131B2E] text-[#E2E8F0] py-20 px-6 border-y border-[#1e2a45]">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row gap-10 items-center">
           <div className="flex-1">
             <p className="text-[#00D4FF] text-sm font-semibold uppercase tracking-widest mb-3">
@@ -125,7 +165,7 @@ export default function Home() {
               Read the full story →
             </Link>
           </div>
-          <div className="flex-shrink-0 bg-[#0A0F1F] rounded-xl p-8 text-center border border-[#1e2a45]">
+          <div className="flex-shrink-0 bg-[#0A0F1F]/80 backdrop-blur-sm rounded-xl p-8 text-center border border-[#1e2a45]">
             <div className="text-6xl mb-4">🔥</div>
             <blockquote className="text-[#94A3B8] italic text-sm leading-relaxed max-w-xs">
               &ldquo;Do Not Wait to Strike till the Iron Is Hot; But Make It Hot by Striking.&rdquo;
@@ -160,7 +200,7 @@ export default function Home() {
         </p>
         <Link
           href="/contact"
-          className="bg-[#FF6B00] text-white px-10 py-3 rounded-lg font-semibold hover:bg-[#e55f00] transition-colors shadow-lg shadow-[#FF6B00]/20"
+          className="bg-[#FF6B00] text-white px-10 py-3.5 rounded-lg font-semibold hover:bg-[#e55f00] transition-all shadow-lg shadow-[#FF6B00]/25 hover:shadow-[#FF6B00]/40"
         >
           Get in Touch
         </Link>
