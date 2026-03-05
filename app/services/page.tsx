@@ -30,9 +30,9 @@ export default function ServicesPage() {
               <div className="w-14 h-14 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-5">
                 <span className="text-3xl">✍️</span>
               </div>
-              <h2 className="text-3xl font-bold mb-4 text-[#E2E8F0]">AI Content Production</h2>
+              <h2 className="text-3xl font-bold mb-4 text-[#E2E8F0]">Marketing & SEO Content Production</h2>
               <p className="text-[#94A3B8] leading-relaxed mb-6">
-                Your business has a story worth telling. We use AI to tell it — consistently,
+                Your business has a story worth telling. We use the latest in technology to tell it — consistently,
                 professionally, and at a fraction of what a traditional agency would charge.
                 Every piece is shaped to your voice, your audience, and your goals.
               </p>
@@ -47,6 +47,7 @@ export default function ServicesPage() {
             </div>
             <div className="space-y-4">
               {[
+                { title: "Company Websites", desc: "Professional websites that convey your brand with clarity and credibility." },
                 { title: "Blog Posts & Articles", desc: "SEO-optimized, brand-voice-matched, ready to publish." },
                 { title: "Email Sequences", desc: "Welcome series, nurture campaigns, promotional blasts." },
                 { title: "Social Media Content", desc: "Consistent, platform-native content calendars." },

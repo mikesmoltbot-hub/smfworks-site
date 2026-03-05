@@ -27,23 +27,20 @@ export default function AboutPage() {
       <section className="py-20 px-6 bg-[#0A0F1F]">
         <div className="max-w-3xl mx-auto">
           <p className="text-[#94A3B8] leading-relaxed text-lg mb-6">
-            Michael Gannotti has spent 30 years in technology — from instructional web
+            Our founder has spent 30 years in technology — from instructional web
             design to Corporate Systems Architect, through 25+ years in Modern Work and
             Business Productivity, to his current role as a Principal AI Solutions Engineer
             deploying generative AI for some of the largest organizations in the country.
           </p>
           <p className="text-[#94A3B8] leading-relaxed text-lg mb-6">
-            For the last three-plus years, he&apos;s been at the leading edge of enterprise AI —
-            building and deploying the kind of systems that Fortune 500 companies spend
+            For nearly six years, he&apos;s been at the leading edge of enterprise AI —
+            solutioning and training the kind of systems that Fortune 500 companies spend
             millions on. He knows what works. He knows what doesn&apos;t. And he knows that
             small businesses deserve access to that same expertise.
           </p>
           <p className="text-[#94A3B8] leading-relaxed text-lg mb-6">
-            When he&apos;s not doing that, Michael is running{" "}
-            <a href="https://saintmichaelsforge.com" target="_blank" rel="noopener noreferrer" className="text-[#00D4FF] hover:underline">
-              Saint Michael&apos;s Forge
-            </a>{" "}
-            — shaping metal with fire and hammer, crafting custom knives and metalwork by hand.
+            When he&apos;s not doing that, he is running an actual forge — shaping metal
+            with fire and hammer, crafting custom knives and metalwork by hand.
             That&apos;s not a metaphor. He literally forges steel.
           </p>
           <p className="text-[#94A3B8] leading-relaxed text-lg mb-10">
@@ -72,7 +69,7 @@ export default function AboutPage() {
               <div className="text-5xl mb-4">🔨</div>
               <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">The Forger</h3>
               <p className="text-[#94A3B8] text-sm leading-relaxed">
-                Bladesmith and blacksmith. Founder of Saint Michael&apos;s Forge.
+                Bladesmith and blacksmith.
                 The forge teaches patience, precision, and respect for the work.
                 Those principles carry directly into everything SMF Works delivers.
               </p>
@@ -81,7 +78,7 @@ export default function AboutPage() {
               <div className="text-5xl mb-4">🎵</div>
               <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">The Creator</h3>
               <p className="text-[#94A3B8] text-sm leading-relaxed">
-                Five AI-generated music albums on Spotify. A published author.
+                Five music albums on Spotify. He is a published author.
                 Creativity isn&apos;t an afterthought — it&apos;s the engine. SMF Works
                 brings genuine creative thinking to every engagement.
               </p>

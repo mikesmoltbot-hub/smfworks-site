@@ -91,7 +91,7 @@ export default function Home() {
             What We Do
           </h2>
           <p className="text-center text-[#94A3B8] max-w-2xl mx-auto mb-14">
-            Two service lines. Both built to give small businesses the same AI advantage
+            Two service lines. Both built to give small businesses the same advantage
             that enterprise companies have been hoarding.
           </p>
 
@@ -103,7 +103,7 @@ export default function Home() {
                 <div className="w-12 h-12 rounded-lg bg-[#00D4FF]/10 flex items-center justify-center mb-4 group-hover:bg-[#00D4FF]/20 transition-colors group-hover:shadow-lg group-hover:shadow-[#00D4FF]/20">
                   <span className="text-2xl">✍️</span>
                 </div>
-                <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">AI Content Production</h3>
+                <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">Marketing & SEO Content Production</h3>
                 <p className="text-[#94A3B8] leading-relaxed mb-6">
                   Blog posts, email sequences, social media, white papers, thought leadership,
                   and ghostwriting — all AI-powered, all precisely crafted to your brand voice.
@@ -144,9 +144,9 @@ export default function Home() {
               The Engineer. The Forger. The Creator.
             </h2>
             <p className="text-[#94A3B8] leading-relaxed mb-6">
-              Michael Gannotti has spent 30 years in technology — deploying enterprise AI
-              for some of the largest organizations in the country. When he&apos;s not doing that,
-              he&apos;s running Saint Michael&apos;s Forge, shaping metal with fire and hammer.
+              Our founder has spent 30 years in technology — solutioning AI for some of
+              the largest organizations in the country the past six years. When he&apos;s not
+              doing that, he&apos;s running an actual forge, shaping metal with fire and hammer.
               SMF Works is where those worlds meet: deep expertise and the discipline of a
               craftsman, brought directly to small businesses.
             </p>
