@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "SMF Works | AI Solutions for Small Business",
   description:
-    "SMF Works delivers AI-powered content and workflow solutions to small businesses. Founded by a Principal AI Solutions Engineer with 30 years of enterprise experience.",
+    "SMF Works delivers HighTech-powered content and workflow solutions to small businesses. Founded by a Principal AI Solutions Engineer with 30 years of enterprise experience.",
   openGraph: {
     title: "SMF Works | AI Solutions for Small Business",
     description:

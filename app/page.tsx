@@ -102,7 +102,7 @@ export default function Home() {
                 <h3 className="text-xl font-bold mb-3 text-[#E2E8F0]">Marketing & SEO Content Production</h3>
                 <p className="text-[#94A3B8] leading-relaxed mb-6">
                   Blog posts, email sequences, social media, white papers, thought leadership,
-                  and ghostwriting — all AI-powered, all precisely crafted to your brand voice.
+                  and ghostwriting — all HighTech-powered, all precisely crafted to your brand voice.
                 </p>
                 <Link href="/services#content" className="text-[#00D4FF] font-semibold hover:underline inline-flex items-center gap-1">
                   Learn more <span className="transition-transform group-hover:translate-x-1">→</span>

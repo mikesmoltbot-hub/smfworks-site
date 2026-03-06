@@ -185,8 +185,8 @@ And if creating weekly content, managing your online presence, and optimizing yo
   {
     slug: "ai-content-vs-traditional-agencies",
     title: "AI Content Production vs. Traditional Agencies: What Small Businesses Need to Know",
-    excerpt: "Traditional marketing agencies charge $3,000 to $10,000 per month for content that often misses the mark. AI-powered content production delivers better results at a fraction of the cost — but only when it is done right. Here is what you need to know before making the switch.",
-    content: `Traditional marketing agencies charge $3,000 to $10,000 per month for content that often misses the mark. AI-powered content production delivers better results at a fraction of the cost — but only when it is done right.
+    excerpt: "Traditional marketing agencies charge $3,000 to $10,000 per month for content that often misses the mark. HighTech-powered content production delivers better results at a fraction of the cost — but only when it is done right. Here is what you need to know before making the switch.",
+    content: `Traditional marketing agencies charge $3,000 to $10,000 per month for content that often misses the mark. HighTech-powered content production delivers better results at a fraction of the cost — but only when it is done right.
 
 ## The Traditional Agency Model Is Broken
 
