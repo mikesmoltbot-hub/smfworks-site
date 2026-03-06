@@ -20,7 +20,7 @@ export default function Nav() {
           <Link href="/about" className="hover:text-[#00D4FF] transition-colors">About</Link>
           <Link href="/contact" className="hover:text-[#00D4FF] transition-colors">Contact</Link>
           <Link
-            href="/#newsletter"
+            href="/newsletter"
             className="bg-[#FF6B00] text-white px-4 py-2 rounded-lg hover:bg-[#e55f00] transition-colors shadow-sm shadow-[#FF6B00]/20"
           >
             SMF AI Weekly
@@ -47,7 +47,7 @@ export default function Nav() {
           <Link href="/about" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">About</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Contact</Link>
           <Link
-            href="/#newsletter"
+            href="/newsletter"
             onClick={() => setOpen(false)}
             className="bg-[#FF6B00] text-white px-4 py-2 rounded-lg text-center hover:bg-[#e55f00]"
           >
