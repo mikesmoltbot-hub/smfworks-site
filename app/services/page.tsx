@@ -85,7 +85,7 @@ export default function ServicesPage() {
                 { title: "AI Tool Selection", desc: "Cut through the noise — we find what actually fits your needs.", href: "/services/ai-tool-selection" },
                 { title: "Custom AI Workflows", desc: "Build flows that connect your tools, your team, your data.", href: "/services/custom-ai-workflows" },
                 { title: "Staff Enablement", desc: "Train your people to work with AI, not around it.", href: "/services/staff-enablement" },
-                { title: "ROI Analysis", desc: "We show you the math before you spend a dime." },
+                { title: "ROI Analysis", desc: "We show you the math before you spend a dime.", href: "/services/roi-analysis" },
                 { title: "Ongoing Optimization", desc: "AI moves fast. We keep your systems current." },
               ].map((item) => (
                 item.href ? (
