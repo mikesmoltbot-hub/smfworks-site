@@ -52,7 +52,7 @@ export default function ServicesPage() {
                 { title: "Email Sequences", desc: "Welcome series, nurture campaigns, promotional blasts.", href: "/services/email-sequences" },
                 { title: "Social Media Content", desc: "Consistent, platform-native content calendars.", href: "/services/social-media-content" },
                 { title: "White Papers & Reports", desc: "Establish authority with data-driven long-form content.", href: "/services/white-papers-reports" },
-                { title: "Thought Leadership", desc: "LinkedIn ghostwriting, op-eds, founder stories." },
+                { title: "Thought Leadership", desc: "LinkedIn ghostwriting, op-eds, founder stories.", href: "/services/thought-leadership" },
                 { title: "Website Copy", desc: "Landing pages, service pages, about pages that convert." },
               ].map((item) => (
                 item.href ? (
