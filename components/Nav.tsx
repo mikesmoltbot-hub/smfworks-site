@@ -15,6 +15,7 @@ export default function Nav() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <Link href="/" className="hover:text-[#00D4FF] transition-colors">Home</Link>
           <Link href="/services" className="hover:text-[#00D4FF] transition-colors">Services</Link>
           <Link href="/blog" className="hover:text-[#00D4FF] transition-colors">Blog</Link>
           <Link href="/about" className="hover:text-[#00D4FF] transition-colors">About</Link>
@@ -42,7 +43,8 @@ export default function Nav() {
       {/* Mobile menu */}
       {open && (
         <div className="md:hidden px-6 pb-4 flex flex-col gap-4 text-sm font-medium border-t border-[#1e2a45] bg-[#001F3F]">
-          <Link href="/services" onClick={() => setOpen(false)} className="hover:text-[#00D4FF] pt-4">Services</Link>
+          <Link href="/" onClick={() => setOpen(false)} className="hover:text-[#00D4FF] pt-4">Home</Link>
+          <Link href="/services" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Services</Link>
           <Link href="/blog" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Blog</Link>
           <Link href="/about" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">About</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Contact</Link>
