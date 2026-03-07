@@ -51,7 +51,7 @@ export default function ServicesPage() {
                 { title: "Blog Posts & Articles", desc: "SEO-optimized, brand-voice-matched, ready to publish.", href: "/services/blog-posts-articles" },
                 { title: "Email Sequences", desc: "Welcome series, nurture campaigns, promotional blasts.", href: "/services/email-sequences" },
                 { title: "Social Media Content", desc: "Consistent, platform-native content calendars.", href: "/services/social-media-content" },
-                { title: "White Papers & Reports", desc: "Establish authority with data-driven long-form content." },
+                { title: "White Papers & Reports", desc: "Establish authority with data-driven long-form content.", href: "/services/white-papers-reports" },
                 { title: "Thought Leadership", desc: "LinkedIn ghostwriting, op-eds, founder stories." },
                 { title: "Website Copy", desc: "Landing pages, service pages, about pages that convert." },
               ].map((item) => (
