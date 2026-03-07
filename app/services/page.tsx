@@ -47,7 +47,7 @@ export default function ServicesPage() {
             </div>
             <div className="space-y-4">
               {[
-                { title: "Company Websites", desc: "Professional websites that convey your brand with clarity and credibility." },
+                { title: "Company Websites", desc: "Professional websites that convey your brand with clarity and credibility.", href: "/services/company-websites" },
                 { title: "Blog Posts & Articles", desc: "SEO-optimized, brand-voice-matched, ready to publish." },
                 { title: "Email Sequences", desc: "Welcome series, nurture campaigns, promotional blasts." },
                 { title: "Social Media Content", desc: "Consistent, platform-native content calendars." },
@@ -55,10 +55,17 @@ export default function ServicesPage() {
                 { title: "Thought Leadership", desc: "LinkedIn ghostwriting, op-eds, founder stories." },
                 { title: "Website Copy", desc: "Landing pages, service pages, about pages that convert." },
               ].map((item) => (
-                <div key={item.title} className="bg-[#131B2E] rounded-lg p-5 border border-[#1e2a45] hover:border-[#00D4FF]/30 transition-colors">
-                  <h3 className="font-semibold mb-1 text-[#E2E8F0]">{item.title}</h3>
-                  <p className="text-sm text-[#94A3B8]">{item.desc}</p>
-                </div>
+                item.href ? (
+                  <Link key={item.title} href={item.href} className="bg-[#131B2E] rounded-lg p-5 border border-[#1e2a45] hover:border-[#00D4FF]/30 transition-colors block group">
+                    <h3 className="font-semibold mb-1 text-[#E2E8F0] group-hover:text-[#00D4FF] transition-colors">{item.title} <span className="text-[#00D4FF] text-xs">→</span></h3>
+                    <p className="text-sm text-[#94A3B8]">{item.desc}</p>
+                  </Link>
+                ) : (
+                  <div key={item.title} className="bg-[#131B2E] rounded-lg p-5 border border-[#1e2a45] hover:border-[#00D4FF]/30 transition-colors">
+                    <h3 className="font-semibold mb-1 text-[#E2E8F0]">{item.title}</h3>
+                    <p className="text-sm text-[#94A3B8]">{item.desc}</p>
+                  </div>
+                )
               ))}
             </div>
           </div>
