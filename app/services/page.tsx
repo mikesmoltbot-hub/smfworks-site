@@ -53,7 +53,7 @@ export default function ServicesPage() {
                 { title: "Social Media Content", desc: "Consistent, platform-native content calendars.", href: "/services/social-media-content" },
                 { title: "White Papers & Reports", desc: "Establish authority with data-driven long-form content.", href: "/services/white-papers-reports" },
                 { title: "Thought Leadership", desc: "LinkedIn ghostwriting, op-eds, founder stories.", href: "/services/thought-leadership" },
-                { title: "Website Copy", desc: "Landing pages, service pages, about pages that convert." },
+                { title: "Website Copy", desc: "Landing pages, service pages, about pages that convert.", href: "/services/website-copy" },
               ].map((item) => (
                 item.href ? (
                   <Link key={item.title} href={item.href} className="bg-[#131B2E] rounded-lg p-5 border border-[#1e2a45] hover:border-[#00D4FF]/30 transition-colors block group">
