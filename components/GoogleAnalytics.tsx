@@ -1,8 +1,6 @@
 import Script from "next/script";
 
-// Replace GA_MEASUREMENT_ID with your actual Google Analytics 4 ID
-// Get it from: analytics.google.com → Admin → Data Streams
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "";
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID || "G-PWCP8SEN62";
 
 export default function GoogleAnalytics() {
   if (!GA_ID) return null;
