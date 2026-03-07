@@ -22,6 +22,9 @@ export default function Nav() {
           <Link href="/about" className="hover:text-[#00D4FF] transition-colors">About</Link>
           <Link href="/contact" className="hover:text-[#00D4FF] transition-colors">Contact</Link>
           <SiteSearch />
+          <Link href="/pay" className="hover:text-[#00D4FF] transition-colors">
+            Pay Invoice
+          </Link>
           <Link
             href="/newsletter"
             className="bg-[#FF6B00] text-white px-4 py-2 rounded-lg hover:bg-[#e55f00] transition-colors shadow-sm shadow-[#FF6B00]/20"
@@ -50,6 +53,7 @@ export default function Nav() {
           <Link href="/blog" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Blog</Link>
           <Link href="/about" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">About</Link>
           <Link href="/contact" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Contact</Link>
+          <Link href="/pay" onClick={() => setOpen(false)} className="hover:text-[#00D4FF]">Pay Invoice</Link>
           <Link
             href="/newsletter"
             onClick={() => setOpen(false)}
