@@ -81,7 +81,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="order-2 md:order-1 space-y-4">
               {[
-                { title: "Process Automation", desc: "Identify and automate repetitive tasks that eat your hours." },
+                { title: "Process Automation", desc: "Identify and automate repetitive tasks that eat your hours.", href: "/services/process-automation" },
                 { title: "AI Tool Selection", desc: "Cut through the noise — we find what actually fits your needs." },
                 { title: "Custom AI Workflows", desc: "Build flows that connect your tools, your team, your data." },
                 { title: "Staff Enablement", desc: "Train your people to work with AI, not around it." },
