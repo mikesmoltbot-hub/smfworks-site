@@ -86,7 +86,7 @@ export default function ServicesPage() {
                 { title: "Custom AI Workflows", desc: "Build flows that connect your tools, your team, your data.", href: "/services/custom-ai-workflows" },
                 { title: "Staff Enablement", desc: "Train your people to work with AI, not around it.", href: "/services/staff-enablement" },
                 { title: "ROI Analysis", desc: "We show you the math before you spend a dime.", href: "/services/roi-analysis" },
-                { title: "Ongoing Optimization", desc: "AI moves fast. We keep your systems current." },
+                { title: "Ongoing Optimization", desc: "AI moves fast. We keep your systems current.", href: "/services/ongoing-optimization" },
               ].map((item) => (
                 item.href ? (
                   <Link key={item.title} href={item.href} className="bg-[#0A0F1F] rounded-lg p-5 border border-[#1e2a45] hover:border-[#FF6B00]/30 transition-colors block group">
