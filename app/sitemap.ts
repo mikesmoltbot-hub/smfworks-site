@@ -4,38 +4,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://smfworks.com";
   const now = new Date();
 
-  const staticPages = [
-    { url: base, priority: 1.0, changeFrequency: "weekly" as const },
-    { url: `${base}/services`, priority: 0.9, changeFrequency: "weekly" as const },
-    { url: `${base}/about`, priority: 0.7, changeFrequency: "monthly" as const },
-    { url: `${base}/contact`, priority: 0.8, changeFrequency: "monthly" as const },
-    { url: `${base}/blog`, priority: 0.9, changeFrequency: "daily" as const },
-    { url: `${base}/newsletter`, priority: 0.7, changeFrequency: "weekly" as const },
+  const blogSlugs = [
+    "why-local-businesses-need-ai-now",
+    "5-ways-small-business-owners-save-hours-with-ai",
+    "seo-for-trades-businesses",
+    "ai-content-vs-traditional-agencies",
   ];
 
-  const servicePages = [
-    "company-websites",
-    "blog-posts-articles",
-    "email-sequences",
-    "social-media-content",
-    "white-papers-reports",
-    "thought-leadership",
-    "website-copy",
-    "process-automation",
-    "ai-tool-selection",
-    "custom-ai-workflows",
-    "staff-enablement",
-    "roi-analysis",
-    "ongoing-optimization",
-  ].map((slug) => ({
-    url: `${base}/services/${slug}`,
-    priority: 0.8,
-    changeFrequency: "monthly" as const,
-    lastModified: now,
-  }));
+  const newsletterSlugs = [
+    "2026-03-06",
+    "2026-02-27",
+    "2026-02-20",
+    "2026-02-13",
+    "2026-02-06",
+    "2026-01-30",
+  ];
 
   return [
-    ...staticPages.map((p) => ({ ...p, lastModified: now })),
-    ...servicePages,
+    { url: base, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
+    { url: `${base}/services`, lastModified: now, changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/about`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/contact`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/blog`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/newsletter`, lastModified: now, changeFrequency: "weekly", priority: 0.8 },
+    ...blogSlugs.map((slug) => ({
+      url: `${base}/blog/${slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    })),
+    ...newsletterSlugs.map((slug) => ({
+      url: `${base}/newsletter/${slug}`,
+      lastModified: now,
+      changeFrequency: "never" as const,
+      priority: 0.6,
+    })),
   ];
 }
