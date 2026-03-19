@@ -195,13 +195,10 @@ The financial case for AI adoption in small business is compelling when approach
 ### Calculating Your AI ROI
 
 **First-Year Cost Formula:**
-```
-Total First-Year Cost = 
-  (Monthly Subscription × 12) + 
-  (Setup Hours × Hourly Rate) + 
-  (Training Hours × Hourly Rate) + 
-  (Lost Productivity During Learning)
-```
+- Monthly Subscription cost × 12
+- Setup Hours × Hourly Rate
+- Training Hours × Hourly Rate
+- Lost Productivity During Learning
 
 **Measure Against:**
 1. Cost savings (labor, errors, fraud)
