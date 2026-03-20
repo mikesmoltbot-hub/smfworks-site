@@ -3892,13 +3892,13 @@ If you started with **workflow automation** (Zapier/Make):
 - Lifetime value
 
 **ROI calculation:**
-```
+\`\`\`
 Annual time saved: ___ hours × $___/hour = $_____
 Annual revenue impact: $_____
 Annual tool costs: $_____
 Net annual benefit: $_____
 ROI: ___%
-```
+\`\`\`
 
 ### Week 13: Refinement
 
