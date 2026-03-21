@@ -333,12 +333,34 @@ export const proSkills: Skill[] = [
     ]
   },
   {
+    slug: "claw-system-backup",
+    name: "Claw System Backup",
+    shortDesc: "Weekly full Linux system backup with compression and verification",
+    fullDesc: "Create compressed archives of your Linux system. Supports full system, incremental, or home-directory-only backups. Requires root access for full system backup. Automatic integrity verification and retention management.",
+    tier: "pro",
+    num: 16,
+    features: [
+      "Full system, incremental, or home-only backups",
+      "Compressed archives (gzip/bzip2/xz)",
+      "Automatic integrity verification",
+      "2-week rolling retention",
+      "Requires root for full system backup",
+      "No external APIs - fully local"
+    ],
+    useCases: [
+      "Weekly system protection",
+      "Complete disaster recovery",
+      "Migrate to new hardware",
+      "System configuration backup"
+    ]
+  },
+  {
     slug: "database-backup",
     name: "Database Backup",
     shortDesc: "Backup SQLite, PostgreSQL, MySQL with compression",
     fullDesc: "Automated database backup solution supporting multiple database types. Schedule regular backups of SQLite, PostgreSQL, and MySQL databases, compress backups to save storage space, encrypt sensitive data, and restore from backup points when needed.",
     tier: "pro",
-    num: 16,
+    num: 17,
     features: [
       "Support for SQLite, PostgreSQL, MySQL",
       "Scheduled automated backups",
