@@ -114,7 +114,7 @@ export default function SkillsPage() {
           
           <div className="bg-[#007BFF]/10 border border-[#007BFF]/30 rounded-xl p-6 mb-10">
             <p className="text-[#E2E8F0] leading-relaxed">
-              Premium skills and applications for business automation. Requires SMF Works subscription ($19.99/mo, price locked at signup). This is a growing collection — new skills and applications added weekly.
+              Premium skills and applications for business automation. Requires SMF Works subscription ($19.99/mo, unlocks all Premium skills and applications for the duration of your active subscription). This is a growing collection — new skills and applications added weekly.
             </p>
           </div>
 
