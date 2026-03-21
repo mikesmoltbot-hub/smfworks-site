@@ -316,7 +316,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Backup SQLite, PostgreSQL, MySQL with compression",
     fullDesc: "Automated database backup solution supporting multiple database types. Schedule regular backups of SQLite, PostgreSQL, and MySQL databases, compress backups to save storage space, encrypt sensitive data, and restore from backup points when needed.",
     tier: "pro",
-    num: 14,
+    num: 15,
     features: [
       "Support for SQLite, PostgreSQL, MySQL",
       "Scheduled automated backups",
