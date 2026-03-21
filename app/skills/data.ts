@@ -381,7 +381,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create business reports from CSV/JSON data",
     fullDesc: "Transform raw data into professional business reports. Import data from CSV or JSON files, apply filters and aggregations, generate charts and visualizations, and export polished PDF or HTML reports ready for stakeholders.",
     tier: "pro",
-    num: 17,
+    num: 18,
     features: [
       "Import CSV and JSON data sources",
       "Custom report templates",
