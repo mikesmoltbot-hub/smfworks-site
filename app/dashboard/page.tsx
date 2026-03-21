@@ -24,7 +24,7 @@ export default function DashboardPage() {
           <h2 className="text-2xl font-bold text-[#E2E8F0] mb-6 text-center">Pro Subscription</h2>
           
           <div className="text-center mb-8">
-            <p className="text-5xl font-bold text-[#00D4FF] mb-2">$19.99</span></p>
+            <p className="text-5xl font-bold text-[#00D4FF] mb-2">$19.99</p>
             <p className="text-[#94A3B8]">per month, price locked forever</p>
           </div>
           
