@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import Script from "next/script";
 
 export const metadata: Metadata = {
@@ -29,11 +30,24 @@ export default function DashboardPage() {
           <div className="bg-[#131B2E] border border-[#1e2a45] rounded-2xl p-8 mb-8">
             <h2 className="text-2xl font-bold text-[#E2E8F0] mb-6 text-center">Choose Your Plan</h2>
             
-            <stripe-pricing-table
-              pricing-table-id="prctbl_1QExample123456789"
-              publishable-key="pk_live_51Example123456789"
-              client-reference-id=""
-            ></stripe-pricing-table>
+            {/* Stripe Pricing Table - Custom Element */}
+            {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+            {(typeof window !== 'undefined' && (window as any).Stripe) ? (
+              <stripe-pricing-table
+                pricing-table-id="prctbl_1QExample123456789"
+                publishable-key="pk_live_51Example123456789"
+              ></stripe-pricing-table>
+            ) : (
+              <div className="text-center py-12">
+                <p className="text-[#94A3B8] mb-4">Pro Subscription - $19.99/month</p>
+                <Link
+                  href="https://buy.stripe.com/example"
+                  className="inline-block bg-[#00D4FF] hover:bg-[#00B8DB] text-[#001F3F] px-8 py-3 rounded-lg font-medium transition-colors"
+                >
+                  Subscribe Now
+                </Link>
+              </div>
+            )}
           </div>
 
           {/* Token Section (shown after subscription) */}
