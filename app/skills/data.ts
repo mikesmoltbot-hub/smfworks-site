@@ -528,7 +528,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Audit workspace for cost and performance optimization",
     fullDesc: "Comprehensive workspace analysis for OpenClaw users. Audit your current setup for cost inefficiencies, identify performance bottlenecks, recommend configuration improvements, and generate optimization reports with actionable recommendations.",
     tier: "pro",
-    num: 23,
+    num: 25,
     features: [
       "Cost analysis and spending reports",
       "Performance bottleneck detection",
