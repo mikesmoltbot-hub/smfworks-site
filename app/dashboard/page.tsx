@@ -83,13 +83,13 @@ export default function DashboardPage() {
               <div className="bg-[#131B2E] border border-[#1e2a45] rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-[#E2E8F0] mb-2">How do I use my token?</h3>
                 <p className="text-[#94A3B8]">
-                  Install the SMF CLI, run `smf login`, and paste your token when prompted. 
+                  Install the SMF CLI, run smf login, and paste your token when prompted. 
                   Your token is stored securely at ~/.smf/token.
                 </p>
               </div>
               
               <div className="bg-[#131B2E] border border-[#1e2a45] rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#E2E8F0] mb-2">What if I cancel?\u003c/h3>
+                <h3 className="text-lg font-semibold text-[#E2E8F0] mb-2">What if I cancel?</h3>
                 <p className="text-[#94A3B8]">
                   Your token will be revoked and Pro skills will stop working. 
                   Free skills continue to work forever.
@@ -97,7 +97,7 @@ export default function DashboardPage() {
               </div>
               
               <div className="bg-[#131B2E] border border-[#1e2a45] rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-[#E2E8F0] mb-2">Can I use skills offline?\u003c/h3>
+                <h3 className="text-lg font-semibold text-[#E2E8F0] mb-2">Can I use skills offline?</h3>
                 <p className="text-[#94A3B8]">
                   Yes! Once authenticated, tokens are cached locally. Pro skills validate 
                   against the cached token and work without internet for up to 24 hours.
