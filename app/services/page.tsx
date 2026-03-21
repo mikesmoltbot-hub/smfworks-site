@@ -183,8 +183,8 @@ export default function ServicesPage() {
             <div className="order-2 md:order-1 space-y-4">
               {[
                 { title: "Concierge OpenClaw Installation & Configuration", desc: "Full-service OpenClaw installation and custom configuration with lifetime Pro skills access.", href: "/services/concierge-openclaw-installation" },
+                { title: "Concierge Microsoft 365 Copilot Consultation & Configuration", desc: "Supercharge your Microsoft 365 with Copilot AI, custom agents, and business intelligence.", href: "/services/concierge-microsoft-365-copilot" },
                 { title: "Process Automation", desc: "Identify and automate repetitive tasks that eat your hours.", href: "/services/process-automation" },
-                { title: "AI Tool Selection", desc: "Cut through the noise — we find what actually fits your needs.", href: "/services/ai-tool-selection" },
                 { title: "Custom AI Workflows", desc: "Build flows that connect your tools, your team, your data.", href: "/services/custom-ai-workflows" },
                 { title: "Staff Enablement", desc: "Train your people to work with AI, not around it.", href: "/services/staff-enablement" },
                 { title: "ROI Analysis", desc: "We show you the math before you spend a dime.", href: "/services/roi-analysis" },
