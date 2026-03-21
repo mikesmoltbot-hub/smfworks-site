@@ -22,6 +22,17 @@ export default function SkillsPage() {
             A curated collection of skills and applications for OpenClaw — from everyday utilities to business automation tools.
             Free skills forever. Pro skills and applications for serious automation.
           </p>
+          <div className="mb-6">
+            <Link
+              href="/contact"
+              className="inline-flex items-center gap-2 text-[#00D4FF] hover:text-[#00B8DB] text-sm font-medium transition-colors"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Request a Skill or Application
+            </Link>
+          </div>
           <div className="flex flex-wrap justify-center gap-4">
             <span className="inline-flex items-center gap-2 bg-[#00D4FF]/10 text-[#00D4FF] px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-[#00D4FF] rounded-full"></span>
