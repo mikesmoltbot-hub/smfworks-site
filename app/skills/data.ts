@@ -221,6 +221,27 @@ export const freeSkills: Skill[] = [
       "Generate TOCs for long documents",
       "Validate Markdown before publishing"
     ]
+  },
+  {
+    slug: "daily-news-digest",
+    name: "Daily News Digest",
+    shortDesc: "Get curated news delivered daily — personalized to your interests",
+    fullDesc: "Start your day informed with a personalized news digest. Choose your favorite categories (business, technology, science, health, sports, entertainment) and get top headlines delivered automatically. Requires your own free NewsAPI key from newsapi.org.",
+    tier: "free",
+    num: 11,
+    features: [
+      "Choose from 7 news categories",
+      "Set your country for local headlines",
+      "Configure articles per category",
+      "Clean, formatted output for messaging",
+      "Schedule daily delivery via cron"
+    ],
+    useCases: [
+      "Morning briefing with business and tech news",
+      "Stay informed without doom-scrolling",
+      "Weekly industry news summary",
+      "Quick catch-up on current events"
+    ]
   }
 ];
 
@@ -231,7 +252,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Capture, qualify, and manage sales leads",
     fullDesc: "A complete lead management system for growing businesses. Capture leads from multiple sources, automatically qualify prospects based on custom criteria, track interactions and follow-ups, and integrate with your CRM or email marketing tools for seamless sales workflows.",
     tier: "pro",
-    num: 11,
+    num: 12,
     features: [
       "Multi-source lead capture",
       "Automated lead scoring and qualification",
@@ -252,7 +273,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Backup SQLite, PostgreSQL, MySQL with compression",
     fullDesc: "Automated database backup solution supporting multiple database types. Schedule regular backups of SQLite, PostgreSQL, and MySQL databases, compress backups to save storage space, encrypt sensitive data, and restore from backup points when needed.",
     tier: "pro",
-    num: 12,
+    num: 13,
     features: [
       "Support for SQLite, PostgreSQL, MySQL",
       "Scheduled automated backups",
@@ -273,7 +294,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create business reports from CSV/JSON data",
     fullDesc: "Transform raw data into professional business reports. Import data from CSV or JSON files, apply filters and aggregations, generate charts and visualizations, and export polished PDF or HTML reports ready for stakeholders.",
     tier: "pro",
-    num: 13,
+    num: 14,
     features: [
       "Import CSV and JSON data sources",
       "Custom report templates",
@@ -294,7 +315,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create and send email campaigns with tracking",
     fullDesc: "Full-featured email marketing automation. Design email templates with personalization fields, manage subscriber lists and segments, schedule campaign sends, and track open rates, click rates, and conversions to optimize performance.",
     tier: "pro",
-    num: 14,
+    num: 15,
     features: [
       "Template-based email creation",
       "List management and segmentation",
@@ -315,7 +336,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Kanban project management with deadlines",
     fullDesc: "Visual project management using Kanban methodology. Organize tasks into customizable boards and columns, set deadlines and priorities, assign team members, track progress through workflows, and generate reports on completion rates.",
     tier: "pro",
-    num: 15,
+    num: 16,
     features: [
       "Kanban boards with customizable columns",
       "Task assignments and deadlines",
@@ -336,7 +357,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Log errors and learnings for continuous improvement",
     fullDesc: "Build a personal knowledge base of mistakes and lessons learned. Log errors with context and root causes, document solutions for future reference, track patterns in recurring issues, and generate insights for process improvement.",
     tier: "pro",
-    num: 16,
+    num: 17,
     features: [
       "Error logging with context capture",
       "Solution documentation",
@@ -357,7 +378,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create professional invoices, track payments",
     fullDesc: "Streamlined invoicing for freelancers and small businesses. Generate professional PDF invoices with custom branding, track payment status, send automated reminders for overdue invoices, and export data for accounting software.",
     tier: "pro",
-    num: 17,
+    num: 18,
     features: [
       "Professional PDF invoice generation",
       "Custom branding and templates",
@@ -378,7 +399,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create forms, collect responses, export data",
     fullDesc: "Build custom forms for any data collection need. Design forms with various field types, embed them on websites or share via links, collect responses securely, and export data to CSV or integrate with other tools via webhooks.",
     tier: "pro",
-    num: 18,
+    num: 19,
     features: [
       "Drag-and-drop form builder",
       "Multiple field types and validation",
@@ -399,7 +420,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Appointment scheduling with availability management",
     fullDesc: "Complete appointment scheduling system. Define availability windows, allow clients to book appointments online, send automatic confirmations and reminders, sync with calendar applications, and manage cancellations and rescheduling.",
     tier: "pro",
-    num: 19,
+    num: 20,
     features: [
       "Customizable availability calendars",
       "Online booking with time slot selection",
@@ -420,7 +441,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Audit workspace for cost and performance optimization",
     fullDesc: "Comprehensive workspace analysis for OpenClaw users. Audit your current setup for cost inefficiencies, identify performance bottlenecks, recommend configuration improvements, and generate optimization reports with actionable recommendations.",
     tier: "pro",
-    num: 20,
+    num: 21,
     features: [
       "Cost analysis and spending reports",
       "Performance bottleneck detection",

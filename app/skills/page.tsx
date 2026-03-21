@@ -36,7 +36,7 @@ export default function SkillsPage() {
           <div className="flex flex-wrap justify-center gap-4">
             <span className="inline-flex items-center gap-2 bg-[#00D4FF]/10 text-[#00D4FF] px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-[#00D4FF] rounded-full"></span>
-              10 Free Forever
+              11 Free Forever
             </span>
             <span className="inline-flex items-center gap-2 bg-[#007BFF]/10 text-[#007BFF] px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-[#007BFF] rounded-full"></span>
