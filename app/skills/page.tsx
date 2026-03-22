@@ -54,19 +54,12 @@ export default function SkillsPage() {
             <p className="text-[#64748B] mb-2"># Install SMF CLI (one-time setup)</p>
             <p className="text-[#00D4FF] mb-4">curl -fsSL https://raw.githubusercontent.com/smfworks/smfworks-skills/main/install.sh | bash</p>
 
-            <p className="text-[#64748B] mb-2"># Install any skill (use 'smfw' to avoid ClawHub conflicts)</p>
+            <p className="text-[#64748B] mb-2"># Install any skill</p>
             <p className="text-[#00D4FF] mb-2">smfw install file-organizer</p>
             <p className="text-[#00D4FF] mb-4">smfw install lead-capture</p>
 
             <p className="text-[#64748B] mb-2"># Run it</p>
             <p className="text-[#00D4FF]">smfw run file-organizer organize-date ~/Downloads</p>
-          </div>
-
-          <div className="mt-4 p-4 bg-[#00D4FF]/10 border border-[#00D4FF]/20 rounded-lg">
-            <p className="text-[#00D4FF] text-sm">
-              <strong>Note:</strong> Use <code className="bg-[#131B2E] px-1 rounded">smfw</code> instead of <code className="bg-[#131B2E] px-1 rounded">smf</code> to avoid conflicts with ClawHub CLI.
-              Both work, but <code className="bg-[#131B2E] px-1 rounded">smfw</code> is preferred.
-            </p>
           </div>
           
           <div className="mt-6 flex flex-wrap justify-center gap-4">
