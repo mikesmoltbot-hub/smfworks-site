@@ -1,47 +1,13 @@
 'use client';
 
-import { useEffect } from 'react';
+// SMFLeadCaptureWidget — disabled until production API URL is configured
+// To re-enable: set NEXT_PUBLIC_SMF_API_URL in Vercel environment variables
+// to a real production URL (not localhost), then uncomment the useEffect below.
+//
+// The widget was causing a browser permission popup ("smfworks.com wants to
+// access other apps and services on this device") because the widget script
+// was being loaded from localhost:5000 which doesn't exist in production.
 
 export default function SMFLeadCaptureWidget() {
-  useEffect(() => {
-    // Only load on client side
-    if (typeof window === 'undefined') return;
-    
-    // Check if already loaded
-    if ((window as any).SMFLeadCaptureLoaded) return;
-    
-    // Configure widget
-    (window as any).SMFLeadCapture = {
-      apiUrl: process.env.NEXT_PUBLIC_SMF_API_URL || 'http://localhost:5000',
-      apiKey: process.env.NEXT_PUBLIC_SMF_API_KEY || '',
-      widgetConfig: {
-        position: 'bottom-right',
-        primaryColor: '#0066CC',
-        greeting: "👋 Hi! How can we help you today?",
-        placeholder: "Type your message...",
-        awayMessage: "We're away right now, but we'll respond ASAP!"
-      }
-    };
-    
-    // Load widget script
-    const script = document.createElement('script');
-    script.src = `${(window as any).SMFLeadCapture.apiUrl}/widget.js`;
-    script.async = true;
-    script.id = 'smf-lead-capture-widget';
-    document.body.appendChild(script);
-    
-    (window as any).SMFLeadCaptureLoaded = true;
-    
-    return () => {
-      // Cleanup
-      const existing = document.getElementById('smf-lead-capture-widget');
-      if (existing) existing.remove();
-      
-      // Remove widget container if exists
-      const container = document.getElementById('smf-chat-widget');
-      if (container) container.remove();
-    };
-  }, []);
-  
   return null;
 }
