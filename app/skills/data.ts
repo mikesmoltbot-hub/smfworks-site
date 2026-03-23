@@ -316,7 +316,7 @@ export const freeSkills: Skill[] = [
     shortDesc: "Capture photos and videos from your webcam — let the AI see what you see",
     fullDesc: "Give your AI assistant eyes. Capture photos and short videos from any connected webcam on demand. Hold something up to the camera — a whiteboard, document, product, or workspace — and ask the AI to analyze it. The camera light always blinks on capture, so you'll always know when it's active.",
     tier: "free",
-    num: 13,
+    num: 12,
     features: [
       "Capture still photos from any connected webcam",
       "Record short video clips (up to any duration)",
@@ -345,7 +345,7 @@ export const freeSkills: Skill[] = [
     shortDesc: "Visual tool for managing installed OpenClaw skills",
     fullDesc: "Interactive terminal UI to view, backup, and cleanly remove installed SMF Skills. Perfect for testing skills on a machine and cleaning up when done. Shows skill details, disk usage, tier (Free/Pro), and allows batch operations with safety confirmations.",
     tier: "free",
-    num: 12,
+    num: 13,
     features: [
       "Visual table of all installed skills",
       "Checkbox selection for batch operations",
@@ -376,7 +376,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Capture, qualify, and manage sales leads",
     fullDesc: "A complete lead management system for growing businesses. Capture leads from multiple sources, automatically qualify prospects based on custom criteria, track interactions and follow-ups, and integrate with your CRM or email marketing tools for seamless sales workflows.",
     tier: "pro",
-    num: 13,
+    num: 14,
     features: [
       "Multi-source lead capture",
       "Automated lead scoring and qualification",
@@ -403,7 +403,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Your personal morning briefing with weather and priorities",
     fullDesc: "Start your day informed with a personalized morning briefing. Get current weather conditions from OpenWeatherMap, your top 3 priorities from file or auto-generated, and optional calendar integration. Perfect for your 7 AM routine.",
     tier: "pro",
-    num: 14,
+    num: 15,
     features: [
       "Current weather and conditions",
       "OpenWeatherMap integration",
@@ -430,7 +430,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Your daily commute briefing with traffic, transit, and weather",
     fullDesc: "Plan your commute with real-time traffic estimates, current weather at your location, and departure time alerts. Uses free OSRM routing with optional Google Maps API for accurate traffic. Configure your home and work addresses for personalized route planning.",
     tier: "pro",
-    num: 15,
+    num: 16,
     features: [
       "Route calculation with traffic estimates",
       "OpenStreetMap geocoding (free)",
@@ -458,7 +458,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Daily backup of your OpenClaw agent with 2-day rolling retention",
     fullDesc: "Automatically backup your OpenClaw workspace, memory, and configuration daily. Maintains a rolling 2-day history with simple one-command restore. Fully local operation - no external APIs required.",
     tier: "pro",
-    num: 16,
+    num: 17,
     features: [
       "Daily automated backups",
       "2-day rolling retention",
@@ -486,7 +486,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Weekly full Linux system backup with compression and verification",
     fullDesc: "Create compressed archives of your Linux system. Supports full system, incremental, or home-directory-only backups. Requires root access for full system backup. Automatic integrity verification and retention management.",
     tier: "pro",
-    num: 17,
+    num: 18,
     features: [
       "Full system, incremental, or home-only backups",
       "Compressed archives (gzip/bzip2/xz)",
@@ -514,7 +514,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Backup SQLite, PostgreSQL, MySQL with compression",
     fullDesc: "Automated database backup solution supporting multiple database types. Schedule regular backups of SQLite, PostgreSQL, and MySQL databases, compress backups to save storage space, encrypt sensitive data, and restore from backup points when needed.",
     tier: "pro",
-    num: 18,
+    num: 19,
     features: [
       "Support for SQLite, PostgreSQL, MySQL",
       "Scheduled automated backups",
@@ -541,7 +541,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create business reports from CSV/JSON data",
     fullDesc: "Transform raw data into professional business reports. Import data from CSV or JSON files, apply filters and aggregations, generate charts and visualizations, and export polished PDF or HTML reports ready for stakeholders.",
     tier: "pro",
-    num: 19,
+    num: 20,
     features: [
       "Import CSV and JSON data sources",
       "Custom report templates",
@@ -568,7 +568,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create and send email campaigns with tracking",
     fullDesc: "Full-featured email marketing automation. Design email templates with personalization fields, manage subscriber lists and segments, schedule campaign sends, and track open rates, click rates, and conversions to optimize performance.",
     tier: "pro",
-    num: 20,
+    num: 21,
     features: [
       "Template-based email creation",
       "List management and segmentation",
@@ -595,7 +595,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Kanban project management with deadlines",
     fullDesc: "Visual project management using Kanban methodology. Organize tasks into customizable boards and columns, set deadlines and priorities, assign team members, track progress through workflows, and generate reports on completion rates.",
     tier: "pro",
-    num: 21,
+    num: 22,
     features: [
       "Kanban boards with customizable columns",
       "Task assignments and deadlines",
@@ -622,7 +622,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Log errors and learnings for continuous improvement",
     fullDesc: "Build a personal knowledge base of mistakes and lessons learned. Log errors with context and root causes, document solutions for future reference, track patterns in recurring issues, and generate insights for process improvement.",
     tier: "pro",
-    num: 22,
+    num: 23,
     features: [
       "Error logging with context capture",
       "Solution documentation",
@@ -649,7 +649,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create professional invoices, track payments",
     fullDesc: "Streamlined invoicing for freelancers and small businesses. Generate professional PDF invoices with custom branding, track payment status, send automated reminders for overdue invoices, and export data for accounting software.",
     tier: "pro",
-    num: 23,
+    num: 24,
     features: [
       "Professional PDF invoice generation",
       "Custom branding and templates",
@@ -676,7 +676,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Create forms, collect responses, export data",
     fullDesc: "Build custom forms for any data collection need. Design forms with various field types, embed them on websites or share via links, collect responses securely, and export data to CSV or integrate with other tools via webhooks.",
     tier: "pro",
-    num: 24,
+    num: 25,
     features: [
       "Drag-and-drop form builder",
       "Multiple field types and validation",
@@ -703,7 +703,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Appointment scheduling with availability management",
     fullDesc: "Complete appointment scheduling system. Define availability windows, allow clients to book appointments online, send automatic confirmations and reminders, sync with calendar applications, and manage cancellations and rescheduling.",
     tier: "pro",
-    num: 25,
+    num: 26,
     features: [
       "Customizable availability calendars",
       "Online booking with time slot selection",
@@ -730,7 +730,7 @@ export const proSkills: Skill[] = [
     shortDesc: "Audit workspace for cost and performance optimization",
     fullDesc: "Comprehensive workspace analysis for OpenClaw users. Audit your current setup for cost inefficiencies, identify performance bottlenecks, recommend configuration improvements, and generate optimization reports with actionable recommendations.",
     tier: "pro",
-    num: 26,
+    num: 27,
     features: [
       "Cost analysis and spending reports",
       "Performance bottleneck detection",
