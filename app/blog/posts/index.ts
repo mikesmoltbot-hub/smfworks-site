@@ -220,7 +220,7 @@ The businesses that will look back on 2026 as a turning point are the ones that 
 ---
 
 *Written by Michael, Principal AI Solutions Engineer & Founder of SMF Works. When not building AI solutions, he's at the forge crafting metal by hand. [Read the full story →](/about)*`,
-    date: "2026-03-24",
+    date: "2026-03-23",
     categories: ["AI", "Automation", "Small Business"],
     readTime: 14,
   },
