@@ -9,6 +9,7 @@ export interface Skill {
   num: number;
   features: string[];
   useCases: string[];
+  howToUse: string[];
 }
 
 export const freeSkills: Skill[] = [
@@ -31,6 +32,12 @@ export const freeSkills: Skill[] = [
       "Organize photos by date taken",
       "Archive old project files",
       "Consolidate scattered documents"
+    ],
+    howToUse: [
+      "python main.py organize ~/Downloads",
+      "python main.py organize ~/Downloads --by type",
+      "python main.py organize ~/Downloads --dry-run",
+      "python main.py rules"
     ]
   },
   {
@@ -52,6 +59,12 @@ export const freeSkills: Skill[] = [
       "Extract specific chapters from reports",
       "Compress large PDFs for email attachments",
       "Fix orientation on scanned documents"
+    ],
+    howToUse: [
+      "python main.py merge output.pdf input1.pdf input2.pdf",
+      "python main.py split big.pdf ./pages/",
+      "python main.py extract report.pdf 1 5 extracted.pdf",
+      "python main.py info document.pdf"
     ]
   },
   {
@@ -73,6 +86,12 @@ export const freeSkills: Skill[] = [
       "Clean up copied text from PDFs",
       "Prepare text for social media posts",
       "Format data for import into databases"
+    ],
+    howToUse: [
+      "python main.py case upper \"hello world\"",
+      "python main.py case camel \"hello world\"",
+      "python main.py clean --aggressive < messy.txt",
+      "python main.py count < document.txt"
     ]
   },
   {
@@ -94,6 +113,12 @@ export const freeSkills: Skill[] = [
       "Share WiFi credentials with guests",
       "Generate business card alternatives",
       "Add QR codes to printed materials"
+    ],
+    howToUse: [
+      "python main.py url https://smf.works",
+      "python main.py wifi \"MyNetwork\" \"password123\"",
+      "python main.py vcard \"John Doe\" \"+1234567890\"",
+      "python main.py email hello@example.com"
     ]
   },
   {
@@ -115,6 +140,12 @@ export const freeSkills: Skill[] = [
       "Monitor system performance during heavy tasks",
       "Identify memory-hungry applications",
       "Plan storage cleanup efficiently"
+    ],
+    howToUse: [
+      "python main.py health",
+      "python main.py disk",
+      "python main.py memory",
+      "python main.py large-files ~/Downloads 20"
     ]
   },
   {
@@ -136,6 +167,12 @@ export const freeSkills: Skill[] = [
       "Check SSL certificate expiration dates",
       "Monitor competitor site uptime",
       "Debug website accessibility issues"
+    ],
+    howToUse: [
+      "python main.py check https://example.com",
+      "python main.py check https://example.com --timeout 30",
+      "python main.py ssl smf.works",
+      "python main.py bulk https://google.com https://github.com"
     ]
   },
   {
@@ -157,6 +194,12 @@ export const freeSkills: Skill[] = [
       "Migrate between spreadsheet applications",
       "Standardize data exports from different systems",
       "Convert database exports for analysis"
+    ],
+    howToUse: [
+      "python main.py convert data.csv data.json",
+      "python main.py convert data.json data.csv",
+      "python main.py validate customers.csv",
+      "python main.py stats sales.csv"
     ]
   },
   {
@@ -178,6 +221,12 @@ export const freeSkills: Skill[] = [
       "Create thumbnails for galleries",
       "Convert screenshots to web-friendly formats",
       "Batch process product photos"
+    ],
+    howToUse: [
+      "python main.py resize photo.jpg --width 800 --output small.jpg",
+      "python main.py resize photo.jpg --height 150 --output thumb.jpg",
+      "python main.py batch ~/Photos/*.jpg --width 1200 --output ~/Small/",
+      "python main.py info image.jpg"
     ]
   },
   {
@@ -199,6 +248,12 @@ export const freeSkills: Skill[] = [
       "Generate secure API keys",
       "Evaluate strength of existing passwords",
       "Create WiFi passwords guests can remember"
+    ],
+    howToUse: [
+      "python main.py password",
+      "python main.py password 24",
+      "python main.py passphrase",
+      "python main.py check \"MyPassword123!\""
     ]
   },
   {
@@ -220,6 +275,12 @@ export const freeSkills: Skill[] = [
       "Prepare documentation for email",
       "Generate TOCs for long documents",
       "Validate Markdown before publishing"
+    ],
+    howToUse: [
+      "python main.py to-html README.md",
+      "python main.py to-text article.md",
+      "python main.py toc documentation.md",
+      "python main.py stats article.md"
     ]
   },
   {
@@ -241,6 +302,12 @@ export const freeSkills: Skill[] = [
       "Stay informed without doom-scrolling",
       "Weekly industry news summary",
       "Quick catch-up on current events"
+    ],
+    howToUse: [
+      "python main.py digest",
+      "python main.py digest --category technology",
+      "python main.py digest --sources \"BBC,CNN\" --limit 5",
+      "python main.py search \"AI\""
     ]
   },
   {
@@ -263,6 +330,12 @@ export const freeSkills: Skill[] = [
       "Reclaim disk space from unused skills",
       "Backup skills before migration",
       "Manage skill subscriptions"
+    ],
+    howToUse: [
+      "smf run skill-manager",
+      "smf run skill-manager --list",
+      "smf run skill-manager --remove coffee-briefing",
+      "smf run skill-manager --backup some-skill"
     ]
   }
 ];
@@ -287,6 +360,12 @@ export const proSkills: Skill[] = [
       "Qualify prospects automatically",
       "Track follow-up activities",
       "Manage sales pipeline efficiently"
+    ],
+    howToUse: [
+      "python main.py capture --name \"Jane Doe\" --email \"jane@company.com\"",
+      "python main.py list",
+      "python main.py export --format csv --output leads.csv",
+      "python main.py search \"enterprise\""
     ]
   },
   {
@@ -308,6 +387,12 @@ export const proSkills: Skill[] = [
       "Daily weather and priority overview",
       "Quick planning for the day ahead",
       "Personal daily digest"
+    ],
+    howToUse: [
+      "python main.py briefing",
+      "python main.py briefing 2026-03-25",
+      "python main.py add \"Review Q1 report\"",
+      "python main.py weather"
     ]
   },
   {
@@ -330,6 +415,12 @@ export const proSkills: Skill[] = [
       "Traffic delay warnings",
       "Weather-aware departure times",
       "Weekday morning routine"
+    ],
+    howToUse: [
+      "python main.py commute",
+      "python main.py commute --home \"New York\" --work \"Boston\"",
+      "python main.py traffic",
+      "python main.py weather"
     ]
   },
   {
@@ -352,6 +443,12 @@ export const proSkills: Skill[] = [
       "Recover from data loss",
       "Migrate to new machine",
       "Maintain backup history"
+    ],
+    howToUse: [
+      "python main.py backup",
+      "python main.py backup --dest ~/Backups",
+      "python main.py list",
+      "python main.py restore OPENCLAW-20260320-143052"
     ]
   },
   {
@@ -374,6 +471,12 @@ export const proSkills: Skill[] = [
       "Complete disaster recovery",
       "Migrate to new hardware",
       "System configuration backup"
+    ],
+    howToUse: [
+      "python main.py backup",
+      "python main.py backup --dest ~/Backups",
+      "python main.py list",
+      "python main.py restore BACKUP-20260320-143052"
     ]
   },
   {
@@ -395,6 +498,12 @@ export const proSkills: Skill[] = [
       "Archive old data before migrations",
       "Create development snapshots",
       "Comply with data retention policies"
+    ],
+    howToUse: [
+      "smf run database-backup backup",
+      "smf run database-backup list",
+      "smf run database-backup restore ~/backups/myapp-20260320.sqlite.sql.gz",
+      "smf run database-backup cleanup 30"
     ]
   },
   {
@@ -416,6 +525,12 @@ export const proSkills: Skill[] = [
       "Create performance dashboards",
       "Automate monthly summaries",
       "Build client-facing reports"
+    ],
+    howToUse: [
+      "smf run report-generator create --sample sales",
+      "smf run report-generator create --data sales.csv --title \"Q1 Report\"",
+      "smf run report-generator create --data data.json --format text",
+      "smf run report-generator templates"
     ]
   },
   {
@@ -437,6 +552,12 @@ export const proSkills: Skill[] = [
       "Automate welcome email sequences",
       "Run promotional campaigns",
       "Nurture leads through email"
+    ],
+    howToUse: [
+      "python main.py send --list contacts.csv --template newsletter.html",
+      "python main.py preview --template newsletter.html",
+      "python main.py validate --list contacts.csv",
+      "python main.py schedule --template template.html --list contacts.csv --time \"2026-03-25 10:00\""
     ]
   },
   {
@@ -458,6 +579,12 @@ export const proSkills: Skill[] = [
       "Track content production workflows",
       "Coordinate marketing campaigns",
       "Organize client projects"
+    ],
+    howToUse: [
+      "smf run task-manager project add \"Website Redesign\"",
+      "smf run task-manager task add \"Fix navigation\" --project \"Website\" --priority high",
+      "smf run task-manager board",
+      "smf run task-manager task move TASK-ABC123 --to done"
     ]
   },
   {
@@ -479,6 +606,12 @@ export const proSkills: Skill[] = [
       "Build team runbooks",
       "Track recurring issues",
       "Create onboarding resources"
+    ],
+    howToUse: [
+      "smf run self-improvement log-error \"File not found\" --context \"Reading config\"",
+      "smf run self-improvement log-learning \"Always check file exists first\"",
+      "smf run self-improvement list",
+      "smf run self-improvement search \"json\""
     ]
   },
   {
@@ -500,6 +633,12 @@ export const proSkills: Skill[] = [
       "Track payment collection",
       "Generate end-of-year summaries",
       "Manage recurring billing"
+    ],
+    howToUse: [
+      "python main.py create --client \"Acme Corp\" --items \"Consulting,150,10\"",
+      "python main.py list",
+      "python main.py show INV-001",
+      "python main.py mark INV-001 --paid"
     ]
   },
   {
@@ -521,6 +660,12 @@ export const proSkills: Skill[] = [
       "Build event registration pages",
       "Collect survey responses",
       "Manage application submissions"
+    ],
+    howToUse: [
+      "python main.py create \"Contact Form\"",
+      "python main.py create \"Survey\" --fields name,email,feedback",
+      "python main.py list",
+      "python main.py render contact-form"
     ]
   },
   {
@@ -542,6 +687,12 @@ export const proSkills: Skill[] = [
       "Book service appointments",
       "Manage team meeting rooms",
       "Coordinate group sessions"
+    ],
+    howToUse: [
+      "python main.py book \"Haircut\" \"Jane Doe\" \"2026-03-25\" \"10:00\"",
+      "python main.py list 2026-03-25",
+      "python main.py cancel BOOK-20260325-001",
+      "python main.py availability 2026-03-25"
     ]
   },
   {
@@ -563,6 +714,12 @@ export const proSkills: Skill[] = [
       "Optimize workflow performance",
       "Audit security configurations",
       "Plan infrastructure scaling"
+    ],
+    howToUse: [
+      "smf run openclaw-optimizer audit",
+      "smf run openclaw-optimizer analyze --context",
+      "smf run openclaw-optimizer recommend --model-routing",
+      "smf run openclaw-optimizer report"
     ]
   }
 ];
