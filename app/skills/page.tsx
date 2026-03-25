@@ -3,9 +3,9 @@ import type { Metadata } from "next";
 import { freeSkills, proSkills } from "./data";
 
 export const metadata: Metadata = {
-  title: "SMF Skills | 27 Free + Pro OpenClaw Skills",
+  title: "SMF Skills | 28 Free + Pro OpenClaw Skills",
   description:
-    "27 productivity skills for OpenClaw: 13 free forever + 14 Pro with subscription. File organizers, PDF tools, webcam capture, lead capture, invoicing, booking, and more.",
+    "28 productivity skills for OpenClaw: 13 free forever + 15 Pro with subscription. File organizers, PDF tools, webcam capture, smf-chat, lead capture, invoicing, booking, and more.",
   alternates: { canonical: "https://smfworks.com/skills" },
 };
 

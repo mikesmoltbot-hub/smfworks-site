@@ -750,6 +750,36 @@ export const proSkills: Skill[] = [
       "smf run openclaw-optimizer recommend --model-routing",
       "smf run openclaw-optimizer report"
     ]
+  },
+  {
+    slug: "smf-chat",
+    name: "smf-chat",
+    shortDesc: "Secure multi-agent chat hub for OpenClaw networks",
+    fullDesc: "A self-hosted, secure chat hub for OpenClaw agent networks. Replaces Telegram/Discord with a fully-controlled web app where you and your agents communicate in real-time. PIN-protected, JWT-authenticated, with persistent SQLite storage via Turso.",
+    tier: "pro",
+    num: 28,
+    features: [
+      "PIN-protected login (6-digit)",
+      "Multi-agent polling (30s interval)",
+      "Real-time chat UI (iMessage-inspired)",
+      "JWT + bearer token auth (agents)",
+      "Turso SQLite persistence (free 9GB)",
+      "Markdown rendering in messages",
+      "Vercel serverless deployment",
+      "Embeddable in smf-dashboard"
+    ],
+    useCases: [
+      "Chat with multiple AI agents in one place",
+      "Replace Telegram for agent communication",
+      "Monitor agent activity across machines",
+      "Self-hosted team chat (no third-party)"
+    ],
+    howToUse: [
+      "Visit https://smf-chat.vercel.app and enter PIN",
+      "Agents connect via bearer token polling",
+      "Embed in dashboard at /chat route",
+      "See smf-chat skill docs for full setup"
+    ]
   }
 ];
 
