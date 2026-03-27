@@ -185,7 +185,7 @@ That future is already here. The question is whether you're building for it.
 `,
     date: "March 27, 2026",
     categories: ["AI Automation", "Multi-Agent Systems", "AI Strategy"],
-    image: "orchestration-hero.png",
+    image: "/images/blog/orchestration-hero.png",
     readTime: 14,
   },
   {
